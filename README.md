@@ -20,3 +20,10 @@ Você deve criar as suas classes de acordo com o diagrama abaixo:
 
 ## Solução
 O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+
+## Minha implementação:
+Foram inseridas à  classe Smartphone propriedades private - Modelo, Imei, Memoria.
+
+Enquanto às classes filhas - Iphone e Nokia - foram adicionadas propriedades MemoriaDisponivel e AplicativosInstalados, a primeira possui o valor inicial de memória da classe base, enquanto o segundo é instanciado como uma lista vazia. Estas propriedades serão utilizadas pelo método InstalarAplicativo, responsável por manipulá-las. Já o acesso a estes dados serão permitido via método Get.
+
+Sobrescrevi o método InstalarAplicativo que recebe o tamanho, além do nome do app a ser intalado. Este método fará uma verificação de disponibilidade de memória para realizar o download. Havendo espaço disponível suficiente, é executada ação: o nome do app é inserido na lista de aplicativos instalados e seu tamanho deduzido da memória disponível. Caso não haja disponibilidade, é informado ao cliente a quantidade de memória que o mesmo precisa liberar para realizar o download. Há ainda o tratamento de exceção genérica, informando ao cliente que houve um erro ao instalar o aplicativo.
